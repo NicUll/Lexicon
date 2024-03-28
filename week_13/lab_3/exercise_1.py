@@ -22,7 +22,7 @@ def _recur_check(ref_list, check_list):
 def array_check(ref_list, check_list):
     element_amount = len(ref_list)
     iter_length = len(check_list) - element_amount + 1
-    if (not ref_list) or (iter_length <= 0):
+    if (not ref_list) or (iter_length <= 0): # If empty reference list or smaller than check_list
         return False
     for i in range(iter_length):
         if check_list[i] == ref_list[0]:
@@ -36,3 +36,4 @@ print(array_check([1,2,3], [2,3,4])) # Expected False
 print(array_check([1,2,3], [5,6,7,1,2,3,8,9])) # Expected True
 print(array_check([], [1,2,3,4])) # Testing empty reference, expected False
 print(array_check([1,2,3,4], [1,2,3])) # Testing check list shorter than ref, expected False
+print(array_check([1,2,3],[]))
