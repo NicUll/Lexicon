@@ -1,6 +1,3 @@
-
-
-
 def exercise_5():
     age = 4
     name = "Sammy"

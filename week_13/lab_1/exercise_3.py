@@ -1,4 +1,3 @@
-
 def exercise_3():
     d1 = {'simple_key':'hello'}
     d2 = {'k1':{'k2':'hello'}}
